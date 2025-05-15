@@ -1,17 +1,17 @@
-# XGBoost-Based Evaluation of a Multi-Timeframe Strategy for EUR/USD Intraday Trading
+# XGBoost-Based Evaluation of a Multi-Timeframe Strategy for EUR/USD Intraday Trading  
 
-## About
+## About  
 This project investigates a multi-timeframe trading strategy for the EUR/USD currency pair using machine learning. By combining predictions from three distinct timeframes—12h (trend), 4h (signal), and 1h (timing)—the strategy aims to reduce noise and improve the quality of trade entries and exits. Trades are executed only when all three models agree on the market direction, enhancing signal precision and reducing false positives.
 
 Furthermore, the project explores meta-labeling with Lopez de Prado’s triple-barrier method to filter out noisy signals and optimize trade selection. The XGBoost classifier (XGBClassifier) is employed to build predictive models for each timeframe.
 
-## Key Features
+## Key Features  
 - Multi-timeframe approach combining long-, medium-, and short-term signals
 - Use of `XGBClassifier` for directional prediction on EUR/USD intraday data
 - Meta-labeling via the triple-barrier method for trade validation
 - Focus on reducing trading costs and improving risk-adjusted returns
 
-## Introduction
+## Introduction  
 Analyzing market movements across multiple timeframes is a common practice among swing and day traders. Typically, the ratio between the individual timeframes ranges from 1:3 to 1:5. There are various ways to apply multi-timeframe analysis, including the use of indicators, support/resistance levels, and other technical methods.
 
 In this study, we investigate the use of AI-based models (`XGBClassifier`) to predict the directional movement of the EUR/USD currency pair across three timeframes, with the goal of identifying high-quality entry and exit points for long and short positions. To the best of our knowledge, this specific use of AI models in a multi-timeframe framework has not been previously documented in the literature.
@@ -23,8 +23,8 @@ The three timeframes used in this study are:
 
 The predictions from these three timeframes are combined into a Multi-Timeframe Strategy (MTS), capable of taking long or short positions, or remaining neutral. As a final layer, we apply the triple-barrier meta-labeling technique proposed by Lopez de Prado to further filter and validate trading signals.
 
-## Project Structure
-CPF_Final_Project/
+## Project Structure  
+CPF_Final_Project/  
 │
 ├── README.md # This file  
 ├── requirements.txt # Python dependencies  
@@ -39,7 +39,7 @@ CPF_Final_Project/
 │ └── xgb_training.py  
 └── CPF_Final_Project.ipynb # Main Jupyter Notebook with project code and commentary  
 
-## Usage
+## Usage  
 The project is primarily run from the Jupyter Notebook 'CPF_Final_Project.ipynb', which contains all code, explanations, and results. The notebook is designed to be executable on Google Colab without modifications.
 
 To run locally:
