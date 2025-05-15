@@ -44,7 +44,7 @@ The project is primarily run from the Jupyter Notebook 'CPF_Final_Project.ipynb'
 
 ### Running in Google Colab
 ⚠️ Important note for Colab users:
-Due to compatibility issues with the pandas_ta library, the required numpy version is downgraded in the first code block. This triggers a forced Colab kernel restart, which is intentional and necessary.
+Due to compatibility issues with the `pandas_ta` library, the required `numpy` version is downgraded in the first code block. This triggers a forced Colab kernel restart, which is intentional and necessary.
 After the restart, simply re-run all cells from the top to continue execution without issues.
 
 ### To run locally:
