@@ -1,0 +1,5 @@
+python==3.10.16
+numpy==1.23.5
+pandas==2.2.3
+pandas-ta==0.3.14b
+xgboost==3.0.0
