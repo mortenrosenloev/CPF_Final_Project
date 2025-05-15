@@ -40,9 +40,14 @@ CPF_Final_Project/
    └── CPF_Final_Project.ipynb # Main Jupyter Notebook with project code and commentary  
 
 ## Usage  
-The project is primarily run from the Jupyter Notebook 'CPF_Final_Project.ipynb', which contains all code, explanations, and results. The notebook is designed to be executable on Google Colab without modifications.
+The project is primarily run from the Jupyter Notebook 'CPF_Final_Project.ipynb', which contains all code, explanations, and results. The notebook is designed to be executable on Google Colab without modifications.  
 
-To run locally:
+### Running in Google Colab
+⚠️ Important note for Colab users:
+Due to compatibility issues with the pandas_ta library, the required numpy version is downgraded in the first code block. This triggers a forced Colab kernel restart, which is intentional and necessary.
+After the restart, simply re-run all cells from the top to continue execution without issues.
+
+### To run locally:
 1. Clone this repo
 2. Install dependencies (pip install -r requirements.txt)
 3. Open 'CPF_Final_Project.ipynb' in Jupyter or VSCode
