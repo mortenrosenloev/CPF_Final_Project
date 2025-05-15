@@ -25,19 +25,19 @@ The predictions from these three timeframes are combined into a Multi-Timeframe 
 
 ## Project Structure  
 CPF_Final_Project/  
-│  
-├── README.md # This file  
-├── requirements.txt # Python dependencies  
-├── data/ # Data files (CSV)  
-│ ├── EUR_USD_2020-01-01_2025-03-31_M15_A.csv  # 15min ask-prices from OANDA  
-│ ├── EUR_USD_2020-01-01_2025-03-31_M15_B.csv  # 15min bid-prices from OANDA  
-│ ├── EUR_USD_2020-01-01_2025-03-31_M15_M.csv  # 15min mid-prices from OANDA  
-├── src/ # Source code (modules)  
-│ ├── helper_functions.py  
-│ ├── financial_data.py  
-│ ├── data_pre_processing.py  
-│ └── xgb_training.py  
-└── CPF_Final_Project.ipynb # Main Jupyter Notebook with project code and commentary  
+   │  
+   ├── README.md # This file  
+   ├── requirements.txt # Python dependencies  
+   ├── data/ # Data files (CSV)  
+   │ ├── EUR_USD_2020-01-01_2025-03-31_M15_A.csv  # 15min ask-prices from OANDA  
+   │ ├── EUR_USD_2020-01-01_2025-03-31_M15_B.csv  # 15min bid-prices from OANDA  
+   │ ├── EUR_USD_2020-01-01_2025-03-31_M15_M.csv  # 15min mid-prices from OANDA  
+   ├── src/ # Source code (modules)  
+   │ ├── helper_functions.py  
+   │ ├── financial_data.py  
+   │ ├── data_pre_processing.py  
+   │ └── xgb_training.py  
+   └── CPF_Final_Project.ipynb # Main Jupyter Notebook with project code and commentary  
 
 ## Usage  
 The project is primarily run from the Jupyter Notebook 'CPF_Final_Project.ipynb', which contains all code, explanations, and results. The notebook is designed to be executable on Google Colab without modifications.
