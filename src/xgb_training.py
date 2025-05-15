@@ -271,7 +271,7 @@ class XGBTraining():
 
         if self.verbose:
             print(86 * '-')
-            print(f'TRAINING (INSAMPLE) METRICS:')
+            print(f'TRAINING (IN-SAMPLE) METRICS:')
             for k, v in self.metrics['train'].items():
                 print(f'{k}: {v:.4f}', end=' | ')
             print('\n' + 86 * '-')
