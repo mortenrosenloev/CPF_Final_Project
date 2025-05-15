@@ -25,7 +25,7 @@ The predictions from these three timeframes are combined into a Multi-Timeframe 
 
 ## Project Structure  
 CPF_Final_Project/  
-│
+│  
 ├── README.md # This file  
 ├── requirements.txt # Python dependencies  
 ├── data/ # Data files (CSV)  
