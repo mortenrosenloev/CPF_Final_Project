@@ -1,3 +1,19 @@
+#
+# XGBoost-Based Evaluation of a Multi-Timeframe Strategy 
+# for EUR/USD Intraday Trading
+# 
+# CPF Algorithmic Trading Final Project
+#
+# Morten Rosenløv Jensen
+# May 2025
+#
+
+# Third-party
+import numpy as np
+import pandas as pd
+from pylab import plt
+plt.style.use('seaborn-v0_8')
+
 class MetaModelBacktester:
     """
     A class to perform event-based backtesting for meta-model predictions using TP/SL levels and a timeout.
