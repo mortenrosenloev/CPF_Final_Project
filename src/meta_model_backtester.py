@@ -289,7 +289,7 @@ def plot_trades_histogram(self):
     """
     
     plt.figure(figsize=(10, 6))
-    plt.hist(self.trades_df['pnl_tc'], bins=30, 
+    plt.hist(self.trades['pnl_tc'], bins=30, 
              color='steelblue', edgecolor='black')
     plt.axvline(0, color='red', linestyle='--')
     plt.title('Histogram of P&L incl. trade cost', fontsize=14)
@@ -306,7 +306,7 @@ def plot_box_plot(self):
     
     plt.figure(figsize=(10, 6))
     
-    renamed = self.trades_df[['pnl', 'pnl_tc']].rename(columns={
+    renamed = self.trades[['pnl', 'pnl_tc']].rename(columns={
         'pnl': 'P&L excl. trade cost',
         'pnl_tc': 'P&L incl. trade cost'
     })
