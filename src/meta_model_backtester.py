@@ -271,7 +271,7 @@ class MetaModelBacktester:
         (with/without trade cost).
         """        
         
-        plt.figure(figsize=(10, 6))
+        plt.figure(figsize=(10, 4))
         plt.title('Strategy returns', fontsize=14)
         plt.plot(self.results['r'].cumsum().apply(np.exp), 
                  label='Buy-and-hold')
@@ -288,7 +288,7 @@ class MetaModelBacktester:
         Plots a histogram of trade P&Ls including trade cost.
         """
         
-        plt.figure(figsize=(10, 6))
+        plt.figure(figsize=(10, 4))
         plt.hist(self.trades['pnl_tc'], bins=30, 
                  color='steelblue', edgecolor='black')
         plt.axvline(0, color='red', linestyle='--')
@@ -304,7 +304,7 @@ class MetaModelBacktester:
         Displays a box plot of P&L distributions with and without trade cost.
         """
         
-        plt.figure(figsize=(10, 6))
+        plt.figure(figsize=(10, 4))
         
         renamed = self.trades[['pnl', 'pnl_tc']].rename(columns={
             'pnl': 'P&L excl. trade cost',
