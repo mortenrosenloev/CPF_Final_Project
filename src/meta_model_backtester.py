@@ -122,7 +122,7 @@ class MetaModelBacktester:
         self.df['s_tc'] = self.strategy_returns_tc
         self.df['comment'] = self.comments
         self.results = self.df.copy()
-        self.trades_df = pd.DataFrame(self.closed_positions)
+        self.trades = pd.DataFrame(self.closed_positions)
     
     
     def _enter_trade(self, i):
