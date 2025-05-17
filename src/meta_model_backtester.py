@@ -115,7 +115,6 @@ class MetaModelBacktester:
     
                 p['pnl'] += bar_pnl
                 p['pnl_tc'] += bar_pnl_tc
-                p['bars_held'] += 1
     
                 if exit_trade:
                     pos_change -= p['direction']
@@ -127,6 +126,8 @@ class MetaModelBacktester:
                     self.comments[i] = reason
                     self.active_positions.remove(p)
                     self.closed_positions.append(p)
+                else:
+                    p['bars_held'] += 1
     
             if i > 0:
                 self.positions[i] = self.positions[i - 1] + pos_change
@@ -206,7 +207,7 @@ class MetaModelBacktester:
         trade_id = p['id']
     
         exit_trade = False
-        reason = ""
+        reason = ''
         exit_price = None
     
         if direction == 1:
