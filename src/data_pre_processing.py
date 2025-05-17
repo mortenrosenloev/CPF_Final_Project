@@ -324,11 +324,11 @@ class DataPreProcessing(FinancialData):
             print('-' * 80)
             self.end = self.data.index[-1]
         start_index = self.data.index.get_indexer(
-            [self.start], method='nearest')[0]
+            [self.start], method='backfill')[0]  # first index >= self.start
         end_index = self.data.index.get_indexer(
-            [self.end], method='nearest')[0]
+            [self.end], method='pad')[0] # first index <= self.end
         start_index = max(0, start_index - self.lags)
-        self.data = self.data.iloc[start_index:end_index].copy()  
+        self.data = self.data.iloc[start_index:end_index + 1].copy()  
 
     
     def _create_splits(self):
