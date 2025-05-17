@@ -48,9 +48,9 @@ Due to compatibility issues with the `pandas_ta` library, the required `numpy` v
 After the restart, simply re-run all cells from the top to continue execution without issues.
 
 ### To run locally:
-1. Clone this repo
-   bash
-   git clone https://github.com/mortenrosenloev/CPF_Final_Project.git
+1. Clone this repo  
+   bash  
+   git clone https://github.com/mortenrosenloev/CPF_Final_Project.git  
    
 2. Install dependencies (pip install -r requirements.txt)
 3. Open 'CPF_Final_Project.ipynb' in Jupyter or VSCode
