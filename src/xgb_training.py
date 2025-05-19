@@ -204,6 +204,7 @@ class XGBTraining():
             'learning_rate': [0.01, 0.1, 0.2],
             'subsample': [0.4, 0.5, 0.6, 0.7],
             'colsample_bytree': [0.4, 0.5, 0.6, 0.7],
+            'gamma': [0, 0.1, 0.2, 0.3, 0.5, 1, 2, 5, 10],
             'reg_alpha': [0, 0.2, 0.5],
             'reg_lambda': [0, 1, 5]
         }
