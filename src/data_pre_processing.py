@@ -159,6 +159,7 @@ class DataPreProcessing(FinancialData):
         """
         
         self.data.ta.ao(append=True)
+        self.data.ta.ppo(append=True)
         self.data.ta.rsi(length=9, append=True)
         self.data.ta.rsi(length=14, append=True)
         self.data.ta.macd(append=True)
