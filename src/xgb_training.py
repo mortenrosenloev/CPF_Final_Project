@@ -200,7 +200,7 @@ class XGBTraining():
         
         param_grid = {
             'n_estimators': [50, 100, 150],
-            'max_depth': [3, 5, 7],
+            'max_depth': [2, 3, 4, 5, 6, 7],
             'learning_rate': [0.01, 0.1, 0.2],
             'subsample': [0.4, 0.5, 0.6, 0.7],
             'colsample_bytree': [0.4, 0.5, 0.6, 0.7],
