@@ -218,7 +218,7 @@ class XGBTraining():
         search = RandomizedSearchCV(
             estimator=base_model,
             param_distributions=param_grid,
-            n_iter=25,
+            n_iter=35,
             cv=tscv,
             scoring=self.scoring,
             verbose=1,
