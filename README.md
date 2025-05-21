@@ -37,6 +37,7 @@ CPF_Final_Project/
    │ ├── financial_data.py  
    │ ├── data_pre_processing.py  
    │ └── xgb_training.py  
+   │ └── meta_model_backtester.py  
    └── CPF_Final_Project.ipynb # Main Jupyter Notebook with project code and commentary  
 
 ## Usage  
