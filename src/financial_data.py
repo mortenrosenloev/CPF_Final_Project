@@ -32,32 +32,17 @@ class FinancialData():
     — timestamps are moved from the 'open' to the 'close' 
     of the new interval.
 
-    Attributes
+    Parameters
     ----------
     url (str): URL base path to CSV files.
     symbol (str): Financial instrument symbol (e.g., 'EUR_USD').
     timeframe (str or None): Pandas-compatible resample frequency string (e.g., '1D', '1h').
-
-    Methods
-    -------
-    _retrieve_data()
-        Loads raw OHLC data and drops unnecessary columns.
-    _resample_data()
-        Applies DST-based logic and resamples data to desired timeframe.
-    _calculate_trading_cost()
-        Loads bid/ask prices and calculates average spread and 
-        log trading cost.
     """
         
     
     def __init__(self, url, symbol='EUR_USD', timeframe=None):
         """
         Initiates the class and executes private methods.
-
-        Parameters:
-        - url (str): Data source URL.
-        - symbol (str): Ticker symbol.
-        - timeframe (str): Time interval (e.g., 'H1', 'D1').
         """
         
         self.url = url
