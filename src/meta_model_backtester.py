@@ -279,7 +279,7 @@ class MetaModelBacktester:
         plt.plot(self.results['s'].cumsum().apply(np.exp), 
                  label='Strategy excl. trading cost')
         plt.plot(self.results['s_tc'].cumsum().apply(np.exp), 
-                 label='Strategy excl. trading cost')
+                 label='Strategy incl. trading cost')
         plt.legend()
         plt.show();
     
